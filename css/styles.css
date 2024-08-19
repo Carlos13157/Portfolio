@@ -2,8 +2,8 @@
     --blanco: #ffffff;
     --oscuro: #212121;
     --gris:#757575;
-    --primario: #ffc107;
-    --secundario: #0097a7;
+    --primario: #ff9300;
+    --secundario: #003147;
     --grisClaro:#d9e9f3;
 }
 
@@ -23,7 +23,7 @@ body{
     font-family: "Krub", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco)100%); /* degradado con css */
+    background-image: linear-gradient(to top, var(--primario) 0%, var(--grisClaro)70%); /* degradado con css */
 
     scroll-behavior: smooth;
 }
@@ -215,7 +215,7 @@ justify-content: flex-end;
 .trabajo .iconos{
     height: 15rem;
     width: 15rem ;
-    background-color: var(--primario);
+    background-color: #ffc107;
     border-radius: 50%;
     display: flex;
     justify-content: space-evenly;
