@@ -32,13 +32,16 @@ body {
     margin: 5rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    box-shadow: 14px 10px 14px 1px rgba(0,0,0,0.75);   
+    box-shadow: 14px 10px 14px 1px rgba(0,0,0,0.75);
+    border-radius: 0.5rem;  
 }
 
 .container .left-side{
     position: relative;
     background-color: #003147;
     padding: 4rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
 }
 
 
@@ -166,6 +169,8 @@ body {
     position: relative;
     background-color: #fff;
     padding: 4rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
 
 
