@@ -127,22 +127,22 @@
                 <div class="input-container">
                     <div class="input">
                         <label for="">Nombre</label>
-                        <input class="input-text" type="text" placeholder="Nombre">
+                        <input class="input-text" type="text" name="name" placeholder="Nombre">
                     </div>
     
                     <div class="input">
                         <label for="">Telefono</label>
-                        <input class="input-text" type="tel" placeholder="Telefono">
+                        <input class="input-text" type="tel" name="phone" placeholder="Telefono">
                     </div>
     
                     <div class="input">
                         <label for="">Correo</label>
-                        <input class="input-text" type="email" placeholder="Correo">
+                        <input class="input-text" type="email" name="email" placeholder="Correo">
                     </div>
     
                     <div class="input">
                         <label for="">Mensaje</label>
-                        <textarea class="input-text" name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                        <textarea class="input-text" name="message" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
                     </div>
                 </div> <!-- contenedor de los input -->
                 
@@ -157,8 +157,32 @@
 
 
     <footer class="footer">
-        <p>Todos los derechos reservados, Carlos Gomez Ingeniero Multimedia</p>
+        <p>Todos los derechos reservados, Carlos Gómez Ingeniero Multimedia</p>
     </footer>
 
 </body>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  // Inicializa EmailJS con tu Public Key
+  emailjs.init("otnNNemPkkiVP5S05"); // <-- reemplaza por tu clave pública
+
+  document.getElementById("Contacto").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_9udt96f", "template_3xvp9zn", this)
+      .then(() => {
+        alert("Mensaje enviado correctamente 😊");
+        this.reset();
+      }, (error) => {
+        alert("Ocurrió un error al enviar el mensaje 😢");
+        console.error(error);
+      });
+  });
+</script>
+
+
+
+
 </html>
