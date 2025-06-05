@@ -209,7 +209,8 @@ justify-content: flex-end;
 
 .trabajo p{
     line-height: 2;
-    text-align: center;
+    margin: 2rem 2rem;
+    text-align: justify;
 }
 
 .trabajo .iconos{
