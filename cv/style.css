@@ -430,3 +430,37 @@ p{
         grid-template-columns: repeat(1,1fr);
     }
 }
+
+.btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem;
+      margin: 0.5rem;
+      overflow: hidden;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #1f2937; /* gris oscuro */
+      border-radius: 0.5rem;
+      background: linear-gradient(to bottom right, #ff7b00,#fde68a ,#ffee00 );
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn:focus {
+      outline: none;
+      box-shadow: 0 0 0 4px #fecaca;
+    }
+
+    .btn span {
+      position: relative;
+      padding: 0.6rem 1.2rem;
+      background: #ffffff;
+      border-radius: 0.4rem;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover span {
+      background: transparent;
+    }

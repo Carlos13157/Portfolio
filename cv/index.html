@@ -1,26 +1,24 @@
 <!DOCTYPE html>
+    <script>
+        tailwind.config = {
+            corePlugins: {
+            preflight: false, // ❌ Desactiva el reset CSS
+            }
+        }
+    </script>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
-    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <link rel="preload" href="styles.css" as="style">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- <header>
-        <h1 class="titulo">Carlos Alejandro Gómez Albarracín <span>Ingeniero Multimedia</span></h1>
-    </header>
-    <div class="nav-bg">
-        <nav class="main-navbar container">
-            <a href="#">Inicio</a>
-            <a href="./cv/index.html">Sobre mi</a>
-            <a href="#trabajos">Trabajos</a>
-            <a href="#Contacto">Contacto</a>
-        </nav>
-    </div> -->
+    
     
     <div class="container">
         <div class="left-side">
@@ -50,7 +48,7 @@
                                 <path d="M3 7l9 6l9 -6" />
                               </svg>
                         </span>
-                        <span class="text">calejoga@hotmail.com</span>
+                        <a href="mailto:calejoga@gmail.com" class="text">calejoga@gmail.com</a>
                     </li>
                     <li>
                         <span class="icon">
@@ -63,7 +61,7 @@
                                 <path d="M12.5 3a17 17 0 0 1 0 18" />
                               </svg>
                         </span>
-                        <a href="https://bit.ly/3yKsybe">Portafolio Web</a>
+                        <a href="https://portfolio-carlos-gomez.netlify.app/" target="_blank">Portafolio Web</a>
 
                     </li>   
                     <li>
@@ -112,13 +110,13 @@
                         <h5>2024 (15 de julio) - 2024 (17 de Julio) </h5>
                         <h4>Curso: React y Spring Boot: Crea tu primera App Full Stack</h4>
                         <h4>Udemy (GM Technologies)</h4>
-                        <a href="freelancer_inicio\cv\docs\UC-858fee42-c088-4d16-8242-403c6cca6375.pdf" download="certificadoRySP.pdf">Certificado</a>
+                        <a href="../cv/docs/UC-858fee42-c088-4d16-8242-403c6cca6375.pdf" target="_blank"">Certificado</a>
                     </li>
                     <li>
                         <h5>2024 (16 de abril) - 2024 (12 de Noviembre) </h5>
                         <h4>Curso: The Ultimate Guide to Game Development with Unity</h4>
                         <h4>Udemy (Jonathan Weinberger, Unity Technologies)</h4>
-                        <a href="freelancer_inicio\cv\docs\UC-0dd66e3b-b2d9-4cd8-9aeb-4dcd1cc03d05.pdf" download="certificadoTUGtGDwU.pdf">Certificado</a>
+                        <a href="../cv/docs/UC-0dd66e3b-b2d9-4cd8-9aeb-4dcd1cc03d05.pdf" target="_blank"">Certificado</a>
                     </li>
                 </ul>
             </div> <!-- fin del educationInformation -->
@@ -159,14 +157,49 @@
                 <h2 class="tittle2">Experiencia Laboral</h2>
                 <div class="box">
                     <div class="year_company">
-                        <h5> - </h5>
+                        <h5> Actualmente </h5>
                         <h5></h5>
                     </div> <!-- cierre del year_company -->
                     <div class="text">
-                        <h4>Sin Experiencia Laboral</h4>
+                        <h4>Unity Developer (Freelance)</h4>
                         <p>
-                            ...
+                            Me dedico al desarrollo de videojuegos y aplicaciones interactivas utilizando Unity, integrando diversos SDKs para ampliar sus funcionalidades y lograr experiencias inmersivas, interactivas y atractivas para el usuario.
                         </p>
+                            
+                    </div>
+                </div> <!-- cierre del box -->
+                <div class="box">
+                    <div class="year_company">
+                        <h5> Marzo de 2025 </h5>
+                        <h5> </h5>
+                    </div> <!-- cierre del year_company -->
+                    <div class="text">
+                        <h4>Joven Investigador</h4>
+                        <p>
+                            Participé como ponente en el 2.º Congreso Nacional de Ingeniería Industrial y Sistemas, presentando el artículo titulado ''¿Cómo documentar la memoria histórica del Amazonas desde la ingeniería?'', llevado a cabo los días 20 y 21 de marzo de 2025 en el Tecnológico de Estudios Superiores de Ecatepec.
+                        </p>
+                        <a href="../cv/docs/Certificación-Carlos Alejandro Gómez Albarracín.pdf" 
+                            target="_blank"
+                            class="btn">
+                            <span>Certificacion</span>
+                        </a>
+                    </div>
+                </div> <!-- cierre del box -->
+                <div class="box">
+                    <div class="year_company">
+                        <h5> Sepetiembre 2024 - Noviembre 2024 </h5>
+                        <h5></h5>
+                    </div> <!-- cierre del year_company -->
+                    <div class="text">
+                        <h4>Joven Investigador</h4>
+                        <p>
+                            Desarrollé el sistema de transportación instantánea para la experiencia 'Realidad Virtual ARC Tecim Reyes Holguín', parte del proyecto 'Corrientes de memoria'. Este sistema permite a los usuarios desplazarse de forma inmediata a diferentes lugares clave dentro de la experiencia.
+                        </p>
+                        <a href="https://corrientesdememoria.com/Experiencia-VR.html" target="_blank" class="btn">
+                            <span>Ir a la Pagina</span>
+                        </a>
+
+                        
                     </div>
                 </div> <!-- cierre del box -->
             </div> <!-- cierre del segundo about -->
